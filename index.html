@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://kit.fontawesome.com/682949d2d2.js" crossorigin="anonymous"></script>
+    <title>AGRO ADVISORS PLUS</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./img/AA.png" alt="Logo Image"> AGRO ADVISORS +
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a> |</li>
+            <li><a href="./about.html">About Us</a>|</li>
+            <li><a href="./services.html">Services</a>|</li>
+            <li><a href="./gallery.html">Gallery</a>|</li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <!-- <li><button class="login-button" href="#">Login</button></li>
+            <li><button class="join-button" href="#">Join</button></li> -->
+        </ul>
+    </nav>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+    </script>
+
+
+<div class="img-slider">
+    <div class="slide active">
+      <img src="./img/img1.jpg" alt="">
+
+    </div>
+    <div class="slide">
+      <img src="./img/expertnetworking.jpg" alt="">
+       </div>
+    <div class="slide">
+      <img src="./img/IMG2.jpg" alt="">
+
+    </div>
+
+      <div class="slide">
+        <img src="./img/IMG3.jpg" alt="">
+
+      </div>
+      <div class="slide">
+        <img src="./img/IMG4.jpg" alt="">
+
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+
+       
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+    
+        // Javascript for image slider manual navigation
+        var manualNav = function(manual){
+          slides.forEach((slide) => {
+            slide.classList.remove('active');
+    
+            btns.forEach((btn) => {
+              btn.classList.remove('active');
+            });
+          });
+    
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+    
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            manualNav(i);
+            currentSlide = i;
+          });
+        });
+    
+        // Javascript for image slider autoplay navigation
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+    
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active');
+              });
+    
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+    
+            if(slides.length == i){
+              i = 0;
+            }
+            if(i >= slides.length){
+              return;
+            }
+            repeater();
+          }, 3000);
+          }
+          repeater();
+        }
+        repeat();
+        </script>
+    
+
+    <!-- About -->
+<div class="aboutP">
+    <div class="ab1">
+        <h5>VISION</h5>
+        <p>Our vision is to create a future where every farmer has access to the resources and support they need to thrive in an ever-evolving agricultural landscape. We envision a world where technology serves as a catalyst for positive change, connecting farmers with expert agro-advisors and high-quality agricultural inputs in a seamless and efficient manner. <br><br>
+          We see AgroAdvisor Plus as not just a web application, but as a cornerstone of agricultural innovation, revolutionizing the way farmers interact with advisors, access information, and procure inputs. Through our platform, we aim to foster a community where knowledge is shared, expertise is valued, and collaboration is encouraged, empowering farmers to make informed decisions that drive productivity, sustainability, and profitability. <br><br>
+          Our vision extends beyond the boundaries of traditional agriculture, embracing diversity, inclusivity, and sustainability as core principles. We aspire to build a global network of farmers, advisors, and agri-retailers united by a common goal: to create a more resilient, efficient, and sustainable food system for the benefit of present and future generations. <br><br>
+          As we continue to innovate and expand our offerings, our vision remains steadfast: to be the leading platform that empowers farmers to unlock their full potential, while promoting a more sustainable and prosperous future for agriculture.
+           </p>
+    </div>
+  
+    <div class="ab2">
+        <h5>MISSION</h5>
+        <li> Our mission is to empower farmers with the knowledge, resources, and connections they need to thrive in today's agricultural landscape. We are committed to revolutionizing the way farmer’s access expert guidance and agricultural inputs, ensuring they have the support necessary to maximize their productivity and sustainability. <br> <br>
+          Through our innovative web application, we seamlessly connect farmers with knowledgeable agro-advisors who provide personalized guidance and recommendations tailored to their specific needs and challenges. By leveraging the expertise of these advisors, farmers can make informed decisions that lead to higher yields, improved crop quality, and increased profitability. <br>
+          Furthermore, AgroAdvisor Plus serves as a vital marketplace for purchasing agricultural inputs. Each product available on our platform is handpicked based on expert recommendations, ensuring that farmers have access to high-quality inputs that align with their unique requirements and goals. <br>
+          Our mission is rooted in the belief that by empowering farmers with the right tools, knowledge, and support, we can drive positive change in the agricultural industry, fostering sustainability, resilience, and prosperity for generations to come.</li>
+    </div>
+  </div>
+  
+  <p class="name" style="font-size: 30px; color: orangered; font-weight: 900;"> OUR BRANDS </p>
+<div class="wrapper">
+
+<div class="card">
+	<h3 class="card-title">AgroConnect</h3>
+		<p class="card-content">AgroConnect is our flagship brand encompassing the seamless connectivity aspect of our web application.</p>
+
+	</div>
+
+	<div class="card">
+		<h3 class="card-title">Expert Edge</h3>
+		<p class="card-content">ExpertEdge embodies the expertise and knowledge of our network of agro-advisors.</p>
+
+	</div>
+
+	<div class="card">
+		<h3 class="card-title">AgriSmart</h3>
+		<p class="card-content">AgriSmart encompasses the smart and efficient farming solutions offered by AgroAdvisor Plus.</p>
+
+	</div>
+
+</div>
+
+
+<div class="page">
+  <h1>OUR ONLINE SERVICES</h1>
+  <div class="mac-wrapper">
+   <div class="mac">
+    <div class="ab1">
+      <h5>Personalized Agricultural Guidance</h5>
+      <h5>Real-time Consultations</h5>
+      <h5> Seamless farming solutions </h5>
+      <h5>Digital agribusiness nexus </h5>
+      <h5>Marketplace for Agricultural Inputs</h5>
+      <h5>Knowledge Sharing and Education</h5>
+      <h5>Data Analytics and Insights</h5>
+      <h5>Farm development </h5>
+      <h5>Agritech advancements & Intel</h5> 
+      <h5>From farm to plate precision </h5>
+      <h5>Empowering sustainable agri</h5>
+
+
+  </div>
+<hr>
+  <!-- <div class="ab1">
+    <h5>Real-time Consultations</h5>
+
+</div> -->
+<hr>
+
+   </div>
+  </div>
+  <div class="btnn">
+
+    <button class="button"><a href="./about.html"> More Info</a></button>
+  </div>
+ </div>
+ 
+
+<!-- Gallery -->
+<div class="GbdyH">
+
+  <!-- Heading Name -->
+  <div class="heading1">
+      <h1>PHOTO - Gallery</h1>
+  </div>
+
+<!-- Image Gallery section all image in one div -->
+<div class="gallery">
+      <img src="./img/IMGG (1).jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+      <img src=
+      "./img/IMGG (2).jpg" 
+      alt="Image 2" class="gallery-img" onclick="showImage(src)">
+      <img src=
+      "./img/IMGG (3).jpg" 
+      alt="Image 2" class="gallery-img" onclick="showImage(src)">
+      <img src=
+      "./img/IMGG (4).jpg" 
+      alt="Image 2" class="gallery-img" onclick="showImage(src)">
+      <img src=
+      "./img//IMGG (8).jpg" 
+      alt="Image 2" class="gallery-img" onclick="showImage(src)">
+      <img src=
+      "./img/IMGG (9).jpg" 
+      alt="Image 2" class="gallery-img" onclick="showImage(src)">
+
+      
+    </div>
+    <!-- <div class="btnn">
+
+       <button class="button"><a href="./gallery.html"> View More </a></button> -->
+    <!-- </div> -->
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-left col-md-4 col-sm-6">
+    <p class="about">
+      AGRIAdvisor Plus serves as a vital marketplace for purchasing agricultural inputs. Each product available on our platform is handpicked based on expert recommendations, ensuring that farmers have access to high-quality inputs that align with their unique requirements and goals.
+    </p>
+    <div class="icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <div>
+     <a href="https://maps.app.goo.gl/xrwUhZH4AJanRDwb7"> <i class="fa fa-map-marker"></i>
+      <p>Masur, Sagar taluk, <br> Shivamogga district<br>
+         PIN- 577401 </p></a>
+    </div>
+    <div>
+     <a href="tel:+91 7892840196"> <i class="fa fa-phone"></i>
+      <p> +91 7892840196 / 9663075029 </p></a>
+    </div>
+    <div>
+      <a href="mailto:manjuub1122@gmail.com"><i class="fa fa-envelope"></i>
+      <p> manjuub1122@gmail.com
+</p></a>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+      <h2> <img src="./img/AA.png" alt="" width="20%">  AGRI ADVISOR + </h2>
+    <p class="menu">
+      <a href="./index.html"> Home</a> |
+      <a href="./about.html"> About</a> |
+      <a href="./services.html"> Sercives</a> |
+      <a href="./contact.html"> Contact</a>
+    </p>
+  </div>
+
+</footer>
+
+<p class="name"> Copyright © 2024 Crystallize Technologies </p>
+
+</body>
+</html>

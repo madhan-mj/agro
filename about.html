@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://kit.fontawesome.com/682949d2d2.js" crossorigin="anonymous"></script>
+    <title>AGRI ADVISOR PLUS</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./img/AA.png" alt="Logo Image"> AGRI ADVISOR +
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a> |</li>
+            <li><a href="./about.html">About Us</a>|</li>
+            <li><a href="./services.html">Services</a>|</li>
+            <li><a href="./gallery.html">Gallery</a>|</li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <!-- <li><button class="login-button" href="#">Login</button></li>
+            <li><button class="join-button" href="#">Join</button></li> -->
+        </ul>
+    </nav>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+    </script>
+
+
+
+
+<Section class="abtPage">
+    <div class="secAb1">
+  
+        <h1> ABOUT</h1>
+    </div>
+  <Div class="secAb2">
+  
+  <h2> AGRI ADVISOR +</h2>
+  <p>Agri Advisor Plus serves as a vital marketplace for purchasing agricultural inputs. Each product available on our platform is handpicked based on expert recommendations, ensuring that farmers have access to high-quality inputs that align with their unique requirements and goals. Through our innovative web application, we seamlessly connect farmers with knowledgeable agro-advisors who provide personalized guidance and recommendations tailored to their specific needs and challenges. By leveraging the expertise of these advisors, farmers can make informed decisions that lead to higher yields, improved crop quality, and increased profitability. </p>
+    <br>
+<br>
+
+<h2> AGRI ADVISOR + MART</h2> <br>
+<p>Agri Advisor Plus Mart, your premier destination for all things agriculture. At Agri Advisor Mart, we're dedicated to providing farmers and agricultural enthusiasts with a comprehensive marketplace that offers a wide range of products and services tailored to meet their needs. From high-quality seeds and plant varieties to cutting-edge machinery and equipment, we have everything you need to maximize your farm's productivity and success.
+But Agri Mart is more than just a marketplace – it's a community. We believe in fostering connections and collaboration among farmers, suppliers, and industry experts, creating a space where knowledge is shared, innovations are celebrated, and challenges are overcome together. Whether you're a seasoned farmer looking to upgrade your equipment or a newcomer seeking guidance on crop selection, AgriAdvisor Plus Mart is here to support you every step of the way.
+With our commitment to quality, reliability, and customer satisfaction, Agri Mart strives to be your trusted partner in agriculture. Join us in shaping the future of farming and experience the convenience and efficiency of AgroAdvisor Plus today.
+
+
+</p>
+<br>
+
+<h2> OUR BRANDS</h2> <br>
+<p><strong>1. AgroConnect:</strong> <br>
+  AgroConnect is our flagship brand encompassing the seamless connectivity aspect of our web application. It represents the innovative technology that enables farmers to easily connect with expert agro-advisors for personalized guidance and recommendations. <br><br>
+  <Strong>2. Expert Edge:</Strong> <br> 
+  ExpertEdge embodies the expertise and knowledge of our network of agro-advisors. This brand represents the high-quality agricultural advice and insights that farmers can access through our platform, ensuring they receive expert guidance tailored to their specific needs. <br><br>
+  <strong>3. Marketplace Select:</strong> <br>
+  Marketplace Select represents the curated marketplace within our platform where farmers can purchase agricultural inputs sourced from local agri retailers. This brand highlights the careful selection process based on expert recommendations, ensuring that farmers have access to top-quality inputs for their farming needs. <br><br>
+  <strong>4. AgriSmart:</strong> <br>
+  AgriSmart encompasses the smart and efficient farming solutions offered by AgroAdvisor Plus. This brand represents the technological innovations, data-driven insights, and sustainable farming practices promoted through our platform, empowering farmers to make smarter decisions and optimize their agricultural operations.
+  
+
+</p>
+
+<br><br>
+  </Div>
+  </Section>
+  
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-left col-md-4 col-sm-6">
+    <p class="about">
+      AGRIAdvisor Plus serves as a vital marketplace for purchasing agricultural inputs. Each product available on our platform is handpicked based on expert recommendations, ensuring that farmers have access to high-quality inputs that align with their unique requirements and goals.
+    </p>
+    <div class="icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <div>
+     <a href="https://maps.app.goo.gl/xrwUhZH4AJanRDwb7"> <i class="fa fa-map-marker"></i>
+      <p>Masur, Sagar taluk, <br> Shivamogga district<br>
+         PIN- 577401 </p></a>
+    </div>
+    <div>
+     <a href="tel:+91 7892840196"> <i class="fa fa-phone"></i>
+      <p> +91 7892840196 / 9663075029 </p></a>
+    </div>
+    <div>
+      <a href="mailto:manjuub1122@gmail.com"><i class="fa fa-envelope"></i>
+      <p> manjuub1122@gmail.com
+      </p></a>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+      <h2> <img src="./img/AA.png" alt="" width="20%">  AGRI ADVISOR + </h2>
+    <p class="menu">
+      <a href="./index.html"> Home</a> |
+      <a href="./about.html"> About</a> |
+      <a href="./services.html"> Sercives</a> |
+      <a href="./contact.html"> Contact</a>
+    </p>
+  </div>
+
+</footer>
+
+<p class="name"> Copyright © 2024 Crystallize Technologies </p>
+
+
+  </body>
+  </html>
+  

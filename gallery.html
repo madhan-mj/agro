@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://kit.fontawesome.com/682949d2d2.js" crossorigin="anonymous"></script>
+    <title>AGRO ADVISORS PLUS</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./img/AA.png" alt="Logo Image">AGRO ADVISORS + 
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a> |</li>
+            <li><a href="./about.html">About Us</a>|</li>
+            <li><a href="./services.html">Services</a>|</li>
+            <li><a href="./gallery.html">Gallery</a>|</li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <!-- <li><button class="login-button" href="#">Login</button></li>
+            <li><button class="join-button" href="#">Join</button></li> -->
+        </ul>
+    </nav>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+    </script>
+
+
+
+<!-- Gallery -->
+
+<div class="Gbdy">
+
+    <!-- Heading Name -->
+    <div class="heading">
+        <h1>PHOTO GALLERY</h1>
+    </div>
+	<!-- Image Gallery section all image in one div -->
+	<div class="gallery">
+        <img src=
+        "./img/img1.jpg" 
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src=
+        "./img/IMG2.jpg" 
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src=
+        "./img/IMG3.jpg" 
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src="./img/IMG4.jpg" alt="Image 4" class="gallery-img" onclick="showImage(src)" >
+        <img src=
+        "./img/img5.jpg" 
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src=
+        "./img/IMGG (1).jpg" 
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src=
+        "./img/IMGG (2).jpg "
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src=
+        "./img/IMGG (3).jpg" 
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src=
+        "./img/IMGG (4).jpg" 
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src="./img/IMGG (5).jpg"
+        alt="Image 3" class="gallery-img" onclick="showImage(src)">
+        <img src=
+        "./img/IMGG (6).jpg"Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src="./img//IMGG (7).jpg"
+        alt="Image 3" class="gallery-img" onclick="showImage(src)">
+        <img src=
+        "./img/IMGG (8).jpg" 
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src="./img/IMGG (9).jpg"
+        alt="Image 3" class="gallery-img" onclick="showImage(src)">
+        <img src=
+        "./img/IMGG (10).jpg" 
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src="./img/IMGG (11).jpg"
+        alt="Image 3" class="gallery-img" onclick="showImage(src)">
+        <img src=
+        "./img/IMGG (12).jpg" 
+        alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src="./img/IMGG (13).jpg"
+        alt="Image 3" class="gallery-img" onclick="showImage(src)">
+        <img src="./img/IMGG (15).jpg" alt="Image 5" class="gallery-img" onclick="showImage(src)">
+        <img src="./img/IMGG (14).jpg" 
+        alt="Image 6" class="gallery-img" onclick="showImage(src)">
+        
+</div>
+<!-- Image containter where image will show in big size -->
+<div class="image-popup-container" id="imagePopup">
+    <span class="close-button" onclick="closeImage()">x</span>
+    <img src="" alt="Popup Image" id="popupImage">
+</div>
+</div>
+<script src="script.js"></script>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-left col-md-4 col-sm-6">
+    <p class="about">
+      Savi Tours and Travels provides the most reliable and economical rental car in the city of Bangalore. Our reservation and customer care department is ready to help you organize your trip to your desired destination with the utmost efficiency.Our goal is to offer our customer’s a variety of options that can enhance your experience, always according to your necessities, and help you get the best out of your rentals, holidays or your business trip.
+    </p>
+    <div class="icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <div>
+     <a href="https://maps.app.goo.gl/eC5hyQ7dWFVLZykg8"> <i class="fa fa-map-marker"></i>
+      <p>Basaveshwara Rd,beside Shiva clinic,<br> opposite to guruvegowda kalyana mantapa <br> Sakleshpura, Karnataka <br>
+         PIN- 573134</p></a>
+    </div>
+    <div>
+     <a href="tel:+91 63633 14412"> <i class="fa fa-phone"></i>
+      <p> +91 63633 14412 </p></a>
+    </div>
+    <div>
+      <a href="mailto:keerthiskp7@gmail.com"><i class="fa fa-envelope"></i>
+      <p> keerthiskp7@gmail.com
+</p></a>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+      <h2> <img src="./img/img (3).png" alt="" width="40%">Tours And Travels </h2>
+    <p class="menu">
+      <a href="./index.html"> Home</a> |
+      <a href="./about.html"> About</a> |
+      <a href="./services.html"> Sercives</a> |
+      <a href="./contact.html"> Contact</a>
+    </p>
+  </div>
+
+</footer>
+  
+  <p class="name"> Copyright © 2024 Crystallize Technologies</p>
+  
+  </body>
+  </html>
+  

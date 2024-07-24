@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://kit.fontawesome.com/682949d2d2.js" crossorigin="anonymous"></script>
+    <title>AGRI ADVISOR PLUS</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./img/AA.png" alt="Logo Image"> AGRI ADVISOR +
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a> |</li>
+            <li><a href="./about.html">About Us</a>|</li>
+            <li><a href="./services.html">Services</a>|</li>
+            <li><a href="./gallery.html">Gallery</a>|</li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <!-- <li><button class="login-button" href="#">Login</button></li>
+            <li><button class="join-button" href="#">Join</button></li> -->
+        </ul>
+    </nav>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+    </script>
+
+
+
+    <!-- servioce section start -->
+    <section>
+      <div class="secAb1">
+
+        <h1> SERVICES < Our Differentiators ></h1>
+
+    </div>
+      <div class="custom-container">
+       <div class="custom-content">
+         <div class="custom-media">
+           
+          <!--==========================
+          YOUR MEDIA
+     
+          Add a link to your image for 'src'
+          Add alt text for 'alt'
+          =============================-->
+     
+           <img class="custom-media--image" src="./img/PG.jpg" alt="ADD_ALT_TEXT_HERE" loading="lazy" /> 
+                 
+        </div>
+        <div class="custom-text">
+     
+           <!--==========================
+           YOUR TEXT AND BUTTON
+     
+           h2 = your heading
+            p = your body text
+            a = your donate button or link
+          =============================-->
+          
+           <h2 class="custom-text--heading">Personalized Guidance</h2>
+           <p class="custom-text--copy">AGRIAdvisor Plus utilizes advanced algorithms and expert knowledge to provide farmers with highly personalized agricultural guidance and recommendations tailored to their specific needs, challenges, and local conditions.
+          </p>        
+        
+         </div>
+       </div>
+      </div>
+
+
+
+
+
+      <div class="custom-container">
+        <div class="custom-content">
+
+         <div class="custom-text">
+      
+            <!--==========================
+            YOUR TEXT AND BUTTON
+      
+            h2 = your heading
+             p = your body text
+             a = your donate button or link
+           =============================-->
+           
+            <h2 class="custom-text--heading">Expert Network</h2>
+            <p class="custom-text--copy">Unlike traditional agricultural advisory services, AGRIAdvisor Plus connects farmers with a network of expert AGRI-advisors who possess deep knowledge and experience in various agricultural domains. This ensures that farmers receive reliable and actionable advice from trusted experts. </p>        
+         
+          </div>
+          <div class="custom-media">
+            
+            <!--==========================
+            YOUR MEDIA
+       
+            Add a link to your image for 'src'
+            Add alt text for 'alt'
+            =============================-->
+       
+             <img class="custom-media--image" src="./img/expertnetworking.jpg" alt="ADD_ALT_TEXT_HERE" loading="lazy" /> 
+                   
+          </div>
+        </div>
+       </div>
+
+
+       <div class="custom-container">
+        <div class="custom-content">
+          <div class="custom-media">
+            
+           <!--==========================
+           YOUR MEDIA
+      
+           Add a link to your image for 'src'
+           Add alt text for 'alt'
+           =============================-->
+      
+            <img class="custom-media--image" src="./img/mp.jpeg" alt="ADD_ALT_TEXT_HERE" loading="lazy" /> 
+                  
+         </div>
+         <div class="custom-text">
+      
+            <!--==========================
+            YOUR TEXT AND BUTTON
+      
+            h2 = your heading
+             p = your body text
+             a = your donate button or link
+           =============================-->
+           
+            <h2 class="custom-text--heading">Curated Marketplace</h2>
+            <p class="custom-text--copy">AGRIAdvisor Plus offers a curated marketplace for purchasing agricultural inputs sourced from local agri retailers. Each product available on the platform is handpicked based on expert recommendations, ensuring that farmers have access to high-quality inputs that are tailored to their unique requirements.
+           </p>        
+         
+          </div>
+        </div>
+       </div>
+
+
+
+
+      <div class="custom-container">
+        <div class="custom-content">
+
+         <div class="custom-text">
+      
+            <!--==========================
+            YOUR TEXT AND BUTTON
+      
+            h2 = your heading
+             p = your body text
+             a = your donate button or link
+           =============================-->
+           
+           <h2 class="custom-text--heading">Seamless Integration</h2>
+           <p class="custom-text--copy"> AGRIAdvisor Plus provides a seamless and integrated platform where farmers can access both personalized agricultural guidance and a marketplace for purchasing inputs. This streamlines the farming process and eliminates the need for farmers to navigate multiple platforms or service providers.
+          </p>     
+
+          </div>
+          <div class="custom-media">
+            
+            <!--==========================
+            YOUR MEDIA
+       
+            Add a link to your image for 'src'
+            Add alt text for 'alt'
+            =============================-->
+       
+             <img class="custom-media--image" src="./img/SI.png" alt="ADD_ALT_TEXT_HERE" loading="lazy" /> 
+                   
+          </div>
+        </div>
+       </div>
+
+
+       <div class="custom-container">
+        <div class="custom-content">
+          <div class="custom-media">
+            
+            <!--==========================
+            YOUR MEDIA
+       
+            Add a link to your image for 'src'
+            Add alt text for 'alt'
+            =============================-->
+       
+             <img class="custom-media--image" src="./img/CI.jpg" alt="ADD_ALT_TEXT_HERE" loading="lazy" /> 
+                   
+          </div>
+
+         <div class="custom-text">
+      
+            <!--==========================
+            YOUR TEXT AND BUTTON
+      
+            h2 = your heading
+             p = your body text
+             a = your donate button or link
+           =============================-->
+           
+            <h2 class="custom-text--heading">Continuous Improvement </h2>
+            <p class="custom-text--copy">AGRI Advisor Plus is committed to continuous improvement and innovation. The platform regularly updates its recommendation algorithms, expands its network of AGRI-advisors and agri retailers, and incorporates feedback from users to ensure that farmers always have access to the latest and most effective agricultural solutions. </p>        
+         
+          </div>
+
+        </div>
+       </div>
+     
+     </section>
+
+
+
+
+
+
+<!-- Footer -->
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-left col-md-4 col-sm-6">
+    <p class="about">
+      AGRIAdvisor Plus serves as a vital marketplace for purchasing agricultural inputs. Each product available on our platform is handpicked based on expert recommendations, ensuring that farmers have access to high-quality inputs that align with their unique requirements and goals.
+    </p>
+    <div class="icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <div>
+     <a href="https://maps.app.goo.gl/xrwUhZH4AJanRDwb7"> <i class="fa fa-map-marker"></i>
+      <p>Masur, Sagar taluk, <br> Shivamogga district<br>
+         PIN- 577401 </p></a>
+    </div>
+    <div>
+     <a href="tel:+91 7892840196"> <i class="fa fa-phone"></i>
+      <p> +91 7892840196 / 9663075029 </p></a>
+    </div>
+    <div>
+      <a href="mailto:manjuub1122@gmail.com"><i class="fa fa-envelope"></i>
+      <p>csravi473@gmail.com</p></a>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+      <h2> <img src="./img/AA.png" alt="" width="20%">  AGRI ADVISOR + </h2>
+    <p class="menu">
+      <a href="./index.html"> Home</a> |
+      <a href="./about.html"> About</a> |
+      <a href="./services.html"> Sercives</a> |
+      <a href="./contact.html"> Contact</a>
+    </p>
+  </div>
+
+</footer>
+
+<p class="name"> Copyright © 2024 Crystallize Technologies </p>
+
+
+  
+  
+  </body>
+  </html>
+  
